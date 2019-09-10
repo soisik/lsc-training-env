@@ -1,0 +1,16 @@
+dn: dc=lsc,dc=dst
+dc: lsc
+o: lsc
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+
+dn: ou=users,dc=lsc,dc=dst
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+dn: ou=groups,dc=lsc,dc=dst
+objectClass: top
+objectClass: organizationalUnit
+ou: groups

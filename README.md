@@ -18,23 +18,23 @@ Run two OpenLDAP directory based on LTB packages:
 Build image :
 
 ```
-docker build . -t training-lsc
+docker build . -t lsc-training
 ````
 
 Run container :
 
 ```
-docker run -dit --name my-training-lsc -p 1389:1389 -p 2389:2389 training-lsc:latest
+docker run -dit --name my-lsc-training -p 1389:1389 -p 2389:2389 lsc-training:latest
 ```
 
 Open a bash shell in container :
 
 ```
-docker exec -i -t my-training-lsc /bin/bash
+docker exec -i -t my-lsc-training /bin/bash
 ```
 
 Get container IP address :
 
 ```
-docker inspect --format '{{ .NetworkSettings.IPAddress }}' my-training-lsc
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' my-lsc-training
 ```

@@ -4,16 +4,16 @@ Run two OpenLDAP directory based on LTB packages:
 
 * Source (port: 1389, rootDN: cn=Manager,dc=lsc,dc=src pwd: secret)
    * dc=lsc,dc=src
-	    * ou=groups
-			   * cn=group1
-				 * ...
-			* ou=users
-			   * uid=xxx
-				 * ...
+      * ou=groups
+         * cn=group1
+         * ...
+      * ou=users
+         * uid=xxx
+         * ...
 * Dest (port: 2389, rootDN: cn=Manager,dc=lsc,dc=dst pwd: secret)
    * dc=lsc,dc=src
-	    * ou=groups
-	    * ou=users
+      * ou=groups
+      * ou=users
 
 Build image :
 
